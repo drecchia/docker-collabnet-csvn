@@ -20,12 +20,10 @@ RUN	useradd collabnet && \
 	cd /opt/csvn && \
 	./bin/csvn install
 	
-WORKDIR /opt/csvn
+EXPOSE    3343 4434 18080 
 
-EXPOSE    3343 18080 
-
-VOLUME /opt/csvn/data
-VOLUME /opt/csvn
+#VOLUME /opt/csvn/data
+#VOLUME /opt/csvn
 
 COPY files/runme.sh /runme.sh
 
