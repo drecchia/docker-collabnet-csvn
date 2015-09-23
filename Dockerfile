@@ -25,6 +25,7 @@ WORKDIR /opt/csvn
 EXPOSE    3343 18080 
 
 VOLUME /opt/csvn/data
+VOLUME /opt/csvn
 
 COPY files/runme.sh /runme.sh
 
